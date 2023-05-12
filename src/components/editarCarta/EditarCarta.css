@@ -1,0 +1,58 @@
+.editarCartaWallpaper {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../img/teste.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    z-index: -3;
+}
+
+.boxEditarCarta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding-top: 6rem;
+}
+
+.form-edit-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50rem;
+    background-color: #ffffff38;
+    box-shadow: -1px 3px 5px 0.5px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+#formAttributeCard {
+    width: 100%;
+    color: #212529;
+}
+
+.boxChooseCardUpdate {
+    width: 45%;
+    height: 5rem;
+}
+
+.imageCardUpdate {
+    width: 100%;
+    align-self: center;
+}
+
+.boxUpdateLinkImage {
+    width: 45%;
+    height: 5rem;
+}
+
+.textEditCard {
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}

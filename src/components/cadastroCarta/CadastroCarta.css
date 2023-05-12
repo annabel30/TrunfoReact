@@ -1,0 +1,81 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cadastroCartaWallpaper {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../img/Backgrounds/backgroundCreateCard.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: -3;
+}
+
+.pageCadastroCarta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.mb-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 20vw;
+  width: 100%;
+  color: white;
+}
+
+.boxCartaCadastro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: -1px 3px 5px 0.5px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 5vh;
+  width: 50vw;
+}
+
+.boxInputCartaCadastro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tituloCadastroCarta {
+  color: white;
+}
+
+.botaoCadastroCarta {
+  width: 100%;
+  height: 3rem;
+  border: 0;
+  background-color: #4d775f;
+  border-radius: 1rem;
+  box-shadow: -1px 3px 5px 0.5px rgba(0, 0, 0, 0.3);
+  transition: all 0.6s;
+}
+
+.botaoCadastroCarta:hover {
+  box-shadow: -3px 6px 5px 1.5px rgba(0, 0, 0, 0.3);
+  background-color: #3b5a49;
+}
+
+.imageCardCreate {
+  width: 100%;
+  margin-top: 1vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-bottom: 3vh;
+}

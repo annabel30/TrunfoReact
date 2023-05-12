@@ -1,0 +1,39 @@
+.boxPageRemoverCarta {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../img/Backgrounds/backgroundRemoveCard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-delete-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 25rem;
+    height: 15rem;
+    background-color: #ffffff8f;
+    box-shadow: -1px 3px 5px 0.5px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    margin-top: 15rem;
+    padding: 2rem;
+}
+
+.botaoRemoverCarta {
+    background-color: #232959;
+    width: 100%;
+    height: 3rem;
+    border: 0;
+    transition: all 0.5s;
+}
+
+.botaoRemoverCarta:hover {
+    background-color: #1f2449;
+}

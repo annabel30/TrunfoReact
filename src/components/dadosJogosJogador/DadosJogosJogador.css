@@ -1,0 +1,116 @@
+.optionVoltarPerfilJogador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3a6e78;
+    border-radius: 0.8rem;
+    box-shadow: -1px 3px 5px 0.5px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    margin: 1rem;
+    margin-top: 4rem;
+    padding: 0.8rem;
+    z-index: 1;
+    transition: all .9s;
+}
+
+.optionVoltarPerfilJogador:hover {
+    background-color: #2e4c53;
+    color: white;
+}
+
+.dadosJogosJogadorWallpaper {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../img/Backgrounds/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    z-index: -3;
+}
+
+.pageDadosJogosJogador {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 6rem;
+}
+
+.boxDataPlayer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.bannerYelan {
+    background-image: url("../../img/Backgrounds/backgroundYelan.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 12rem;
+    height: 30rem;
+    border-radius: 1rem;
+}
+
+.boxVDDados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 20rem;
+}
+
+.boxVictories {
+    background-image: url("../../img/Extras/backBoxVictories.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 12em;
+    height: 4.3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.boxDefeats {
+    background-image: url("../../img/Extras/backBoxDefeats.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 12em;
+    height: 4.3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.textVD {
+    font-size: larger;
+}
+
+.boxBookDataPlayers {
+    background-image: url(../../img/Backgrounds/backgroundBookDataPlayers.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    min-width: 40rem;
+    height: 100%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 5rem;
+}
+
+.chibiImageDataPlayers {
+    width: 12rem;
+}

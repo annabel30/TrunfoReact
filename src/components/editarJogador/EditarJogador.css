@@ -1,0 +1,13 @@
+.pageEditarJogador {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../img/Backgrounds/backgroundEditPlayer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* position: fixed; */
+}

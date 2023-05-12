@@ -1,0 +1,195 @@
+.mostrarJogadorWallpaper {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    z-index: -3;
+}
+
+.boxMostrarJogadorPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    padding-top: 6rem;
+}
+
+.titleMostrarJogador {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.boxJogador {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.boxMostrarJogador {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 40rem;
+    border-radius: 1rem;
+    box-shadow: -1px 3px 5px 0.5px rgba(0, 0, 0, 0.3);
+    padding: 5vh;
+    font-size: larger;
+}
+
+.imageLinesIdCard {
+    width: 85%;
+}
+
+.mostrarJogadorIdRowBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start;
+    width: 100%;
+    height: 4rem;
+}
+
+.travelerTextIdBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: flex-start;
+    color: white;
+}
+
+.travelerIdTitle {
+    color: white;
+}
+
+.travelerIdInfo {
+    font-size: 0.7rem;
+    color: white;
+}
+
+.infoPlayer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 23rem;
+    gap: 1rem;
+}
+
+.infoLinePlayerName {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    color: #212529;
+    font-size: larger;
+}
+
+.aliasTravelerTitle {
+    margin-right: 0.5rem;
+}
+
+.infoLinePlayer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.infoLinePlayerTitle {
+    color: white;
+    margin-right: 0.5rem;
+}
+
+.profileImage {
+    border-radius: 0.5rem;
+    width: 11.5rem;
+}
+
+.profileImageExtras {
+    width: 4rem;
+}
+
+.boxOpcoesJogador {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 14rem;
+}
+
+.buttonOpcoesJogador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 1rem;
+    background-color: gray;
+    color: #212529;
+    transition: all 0.6s;
+    border: 0;
+}
+
+.buttonOpcoesJogador:hover {
+    cursor: pointer;
+    background-color: rgb(84, 83, 83);
+    color: white;
+}
+
+.aTravel {
+    text-decoration: none;
+    color: white;
+}
+
+.aTravel:hover {
+    color: white;
+}
+
+.aTravelModal {
+    text-decoration: none;
+    color: white;
+    width: 48%;
+}
+
+.aTravelModal:hover {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.buttonModalLeave {
+    background-color: rgb(148, 153, 163);
+    border: 0;
+    width: 98%;
+}
+
+.buttonModalLeave:hover {
+    background-color: rgb(105, 116, 141);
+}
+
+.buttonModalCancel {
+    background-color: rgb(55, 143, 216);
+    border: 0;
+    width: 48%;
+}
+
+.buttonModalCancel:hover {
+    background-color: rgb(31, 100, 156);
+}
+
+.modal-footer {
+    justify-content: space-between;
+}
