@@ -9,79 +9,47 @@ import Paimon from "../../img/Extras/paimon.png";
 
 function Login() {
 
-  // const [player, setPlayer] = useState([])
-  // const [path, setPath] = useState("");
-  // let passwordBD
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
-  function verifyInfo(event) {
-    // event.preventDefault()
-    const name = document.getElementById("nameInput").value;
-    const password = document.getElementById("passwordInput").value;
-    localStorage.setItem("nameUser", name);
+  const handleUsernameChange = (event) => {
+    setUsername(event.target.value);
+  };
 
-    // if (name !== "" && password !== "") {
-    //   PlayerService.login(name, password).then(resposta => {
-    //     setPlayer(resposta.data)
-    //     console.log(resposta)
-    //     console.log(passwordBD === password)
-    //     passwordBD = resposta.data.password
-    //   }).catch(erro =>
-    //     console.log(erro)
-    //   )
-    //   if (passwordBD === password) {
-    //     setPath("./home");
-    //   } else {
-    //     alert("Nome ou senha incorretos!");
-    //     setPath("./");
-    //   }
-    // } else {
-    //   alert("Insira todos os valores!");
-    //   setPath("./");
-    // }
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
 
-    //   try {
-    //     PlayerService.login(name, password).then(resposta => {
-    //       setPlayer(resposta.data)
-    //       console.log(resposta)
-    //       passwordBD = resposta.data.password
-    //       alert(resposta)
-    //     }).catch(erro =>
-    //       console.log(erro)
-    //       )
-    //     } catch (erro){
-    //       console.log(erro)
-    //     }
+  const verifyInfo = (event) => {
 
-    //     console.log(passwordBD)
-    //   if (passwordBD === password){
-    //     path = "./home"
-    //   } else {
-    //     alert("Nome ou senha incorretos!");
-    //     path = "./"
-    //   }
-
-    // } else {
-    //   alert("Insira todos os valores!");
-    //   path = "./"
-    // }
+    event.preventDefault()
+    PlayerService.buscarPorNome(username).then((resposta) => {
+      if (username == resposta.data.name && password == resposta.data.password) { // eslint-disable-line eqeqeq
+        localStorage.setItem("nameUser", username);
+        window.location.href = '/home';
+      }
+    }).catch((erro) => {
+      console.log(erro)
+      alert("Nome ou senha incorretos!");
+    })
   }
 
   return (
     <div className='boxPageLogin'>
       <div className='pageLogin'>
         <h1 className='titleLogin'>Login</h1>
-        <Form className='bloco'>
+        <Form className='bloco' onSubmit={verifyInfo}>
           <Form.Group className="inputsLogin" id="formNameLoginPlayer">
             <Form.Label>Nome do Viajante</Form.Label>
-            <Form.Control id='nameInput' type="text" placeholder="Insira o nome" />
+            <Form.Control id='nameInput' type="text" placeholder="Insira o nome" value={username} onChange={handleUsernameChange} />
           </Form.Group>
 
           <Form.Group className="inputsLogin" id="formPasswordLoginPlayer">
             <Form.Label>Senha</Form.Label>
-            <Form.Control id='passwordInput' type="password" placeholder="Insira a senha" />
+            <Form.Control id='passwordInput' type="password" placeholder="Insira a senha" value={password} onChange={handlePasswordChange} />
           </Form.Group>
 
-          <Button className='botao' variant="primary" type="submit" onClick={verifyInfo} href="./home">
+          <Button className='botao' variant="primary" type="submit" onClick={verifyInfo}>
             Transportar
           </Button>
         </Form>
@@ -97,6 +65,7 @@ function Login() {
       </div>
     </div >
   );
+
 }
 
 export default Login;
