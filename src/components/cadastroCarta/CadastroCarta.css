@@ -20,6 +20,7 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   align-items: center;
   padding-top: 3rem;
+  gap: 3rem;
 }
 
 .mb-3 {
