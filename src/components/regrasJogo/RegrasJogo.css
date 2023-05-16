@@ -1,0 +1,17 @@
+.pageShowRulesGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.boxRulesGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30rem;
+    height: 20rem;
+    background-color: pink;
+}

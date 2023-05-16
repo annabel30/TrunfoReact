@@ -22,7 +22,7 @@ function Navbar() {
           <NavDropdown.Item eventKey="link-6" href="/removerCarta">Remover carta</NavDropdown.Item>
         </NavDropdown>
         <Nav.Item>
-          <Nav.Link eventKey="link-7" href="/jogo" disabled>Jogo</Nav.Link>
+          <Nav.Link eventKey="link-7" href="/regrasJogo">Jogo</Nav.Link>
         </Nav.Item>
       </Nav>
     </div>

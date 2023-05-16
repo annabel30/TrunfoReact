@@ -13,6 +13,7 @@ import EditarJogador from './components/editarJogador/EditarJogador';
 import EditarCarta from './components/editarCarta/EditarCarta';
 import RemoverCarta from './components/removerCarta/RemoverCarta';
 import DadosJogosJogador from './components/dadosJogosJogador/DadosJogosJogador';
+import RegrasJogo from './components/regrasJogo/RegrasJogo';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/editarCarta" element={<EditarCarta />} />
           <Route path="/removerCarta" element={<RemoverCarta />} />
           <Route path="/dadosJogosJogador" element={<DadosJogosJogador />} />
+          <Route path="/regrasJogo" element={<RegrasJogo />} />
         </Routes>
       </BrowserRouter>
     </>
@@ -37,12 +39,3 @@ function App() {
 }
 
 export default App;
-
-// FALTAAAAAAAAAAAAAAAAAAAAAAA
-// Editar carta
-// Editar jogador
-// Ver carta específica
-
-// scss
-// #1a4178
-// #a19a31
