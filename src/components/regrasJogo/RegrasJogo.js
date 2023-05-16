@@ -12,9 +12,11 @@ function RegrasJogo() {
                         when an unknown printer took a galley of type and scrambled
                         it to make a type specimen book.
                     </p>
-                    <button className='botaoAdicionarJogador' variant="primary" type="submit" href="./Jogo.js">
-                        Iniciar jogo
-                    </button>
+                    <a  className="aTravel" href="./jogo">
+                        <button className='botaoAdicionarJogador' variant="primary" type="submit">
+                            Iniciar jogo
+                        </button>
+                    </a>
                 </div>
             </div>
         </>

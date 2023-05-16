@@ -14,6 +14,7 @@ import EditarCarta from './components/editarCarta/EditarCarta';
 import RemoverCarta from './components/removerCarta/RemoverCarta';
 import DadosJogosJogador from './components/dadosJogosJogador/DadosJogosJogador';
 import RegrasJogo from './components/regrasJogo/RegrasJogo';
+import Jogo from './components/jogo/Jogo';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/removerCarta" element={<RemoverCarta />} />
           <Route path="/dadosJogosJogador" element={<DadosJogosJogador />} />
           <Route path="/regrasJogo" element={<RegrasJogo />} />
+          <Route path="/jogo" element={<Jogo />} />
         </Routes>
       </BrowserRouter>
     </>
