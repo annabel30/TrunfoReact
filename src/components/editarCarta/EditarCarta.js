@@ -28,6 +28,7 @@ function EditarCarta() {
     const editar = (event) => {
         event.preventDefault()
         CardService.editar(card.idCard, card)
+        alert("Carta editada!")
     }
 
     return (
@@ -35,6 +36,7 @@ function EditarCarta() {
             <Navbar />
             <div className='editarCartaWallpaper'></div>
             <div className='boxEditarCarta'>
+                <h1 className='tituloEditarCarta'>Editar carta</h1>
                 <Form className='form-edit-card'>
 
                     <div className="boxChooseCardUpdate">

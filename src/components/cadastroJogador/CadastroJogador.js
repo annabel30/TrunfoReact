@@ -31,7 +31,8 @@ function CadastroJogador() {
       && player.element !== '' && player.weapon !== ''
       && player.password !== '') {
       if (player.password === verifyPassword.value) {
-        alert("cadastrou");
+        alert("Cadastro efetuado!");
+        window.location.href = '/';
       } else {
         alert("Senhas não compatíveis");
       }

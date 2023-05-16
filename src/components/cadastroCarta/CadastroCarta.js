@@ -28,6 +28,8 @@ function CadastroCarta() {
   const cadastrar = (event) => {
     event.preventDefault()
     CardService.cadastrar(card)
+    alert("Cadastro efetuado!")
+    window.location.reload()
   }
 
   return (

@@ -12,10 +12,15 @@
 .boxEditarCarta {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 100vh;
-    padding-top: 6rem;
+    gap: 2rem;
+}
+
+.tituloEditarCarta {
+    color: white;
+    padding-top: 0 !important;
 }
 
 .form-edit-card {
