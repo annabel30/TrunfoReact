@@ -39,26 +39,20 @@ function EditarCarta() {
                 <h1 className='tituloEditarCarta'>Editar carta</h1>
                 <Form className='form-edit-card'>
 
-                    <div className="boxChooseCardUpdate">
-                        <div className='textEditCard'>Escolha a carta para editar</div>
+                    <div className="mb-3">
+                        <div className='textEditCard'>Carta para editar</div>
                         <Form.Select value={selectValue} aria-label="Default select example" className='select-card' onChange={e => setSelectValue(e.target.value)}>
                             <SelectCartas />
                         </Form.Select>
                     </div>
 
-                    <div className="boxUpdateLinkImage">
+                    <div className="mb-3">
                         <div className='textEditCard'>Imagem</div>
                         <Form.Group className="imageCardUpdate" id="formImageCard">
                             <Form.Control type="text" placeholder="Link da imagem" id='imageInput'
                                 name='image' onChange={atualizaCard} value={card.image} />
                         </Form.Group>
                     </div>
-
-                    <Form.Group className="mb-3" id="formNameCard">
-                        <Form.Label>Nome da carta</Form.Label>
-                        <Form.Control type="text" defaultValue={card.name} placeholder="Insira o nome"
-                            id='nomeCartaInput' name='name' onChange={atualizaCard} value={card.name} />
-                    </Form.Group>
 
                     <Form.Group className="mb-3" id="formAtkCard">
                         <Form.Label>Atk</Form.Label>
@@ -91,6 +85,7 @@ function EditarCarta() {
                     </Form.Group>
 
                     <Form.Group className="mb-3">
+                        <Form.Label>Elemento</Form.Label>
                         <Form.Select className='selectElementCard'
                             name='element' onChange={atualizaCard} value={card.element}>
                             <option value="Anemo">Anemo</option>
@@ -100,16 +95,6 @@ function EditarCarta() {
                             <option value="Geo">Geo</option>
                             <option value="Hydro">Hydro</option>
                             <option value="Pyro">Pyro</option>
-                        </Form.Select>
-                    </Form.Group>
-
-                    <Form.Group className="mb-3">
-                        <Form.Select className='selectRegionCard'
-                            name='region' onChange={atualizaCard} value={card.region}>
-                            <option value="Mondstadt">Mondstadt</option>
-                            <option value="Liyue">Liyue</option>
-                            <option value="Inazuma">Inazuma</option>
-                            <option value="Sumeru">Sumeru</option>
                         </Form.Select>
                     </Form.Group>
 

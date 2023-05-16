@@ -30,6 +30,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 50rem;
+    max-width: 60%;
     background-color: #ffffff38;
     box-shadow: -1px 3px 5px 0.5px rgba(0, 0, 0, 0.3);
     border-radius: 1rem;
@@ -40,20 +41,9 @@
     width: 100%;
     color: #212529;
 }
-
-.boxChooseCardUpdate {
-    width: 45%;
-    height: 5rem;
-}
-
 .imageCardUpdate {
     width: 100%;
     align-self: center;
-}
-
-.boxUpdateLinkImage {
-    width: 45%;
-    height: 5rem;
 }
 
 .textEditCard {

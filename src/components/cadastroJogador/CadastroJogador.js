@@ -10,7 +10,7 @@ function CadastroJogador() {
 
   const [player, setPlayer] = useState({
     "name": "",
-    "age": 0,
+    "age": null,
     "gender": "",
     "region": "",
     "element": "",
