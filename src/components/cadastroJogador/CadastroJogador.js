@@ -15,7 +15,7 @@ function CadastroJogador() {
     "region": "",
     "element": "",
     "weapon": "",
-    "password": 0
+    "password": ""
   })
 
   const atualizaPlayer = (event) => {

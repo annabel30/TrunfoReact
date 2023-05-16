@@ -35,11 +35,6 @@ function EditarJogador() {
       <div className='pageEditarJogador'>
         <h1 className='titleCadastrarJogador'>Editar Viajante</h1>
         <Form className='boxJogadorCadastro' onSubmit={editar}>
-          <Form.Group className="mb-3" id="formNamePlayer">
-            <Form.Label>Nome do viajante</Form.Label>
-            <Form.Control type="text" defaultValue={player.name} id='nomeJogadorInput'
-              name='name' onChange={atualizaPlayer} value={player.name} />
-          </Form.Group>
 
           <Form.Group className="mb-3" id="formAgePlayer">
             <Form.Label>Idade</Form.Label>
@@ -47,27 +42,20 @@ function EditarJogador() {
               name='age' onChange={atualizaPlayer} value={player.age} />
           </Form.Group>
 
-          <Form.Group className="mb-3" id="formGenderPlayer">
-            <Form.Select className='selectGenderPlayer' id='generoJogadorInput'
-              name='gender' onChange={atualizaPlayer} value={player.gender}>
-              <option disabled hidden value="">Gênero</option>
-              <option selected value="F">Feminino</option>
-              <option value="M">Masculino</option>
-            </Form.Select>
-          </Form.Group>
-
           <Form.Group className="mb-3">
+            <Form.Label>Região</Form.Label>
             <Form.Select className='selectRegionPlayer' id='regionJogadorInput'
               name='region' onChange={atualizaPlayer} value={player.region}>
               <option disabled hidden value="">Região</option>
               <option value="Mondstadt">Mondstadt</option>
               <option value="Liyue">Liyue</option>
               <option value="Inazuma">Inazuma</option>
-              <option selected value="Sumeru">Sumeru</option>
+              <option value="Sumeru">Sumeru</option>
             </Form.Select>
           </Form.Group>
 
           <Form.Group className="mb-3">
+            <Form.Label>Elemento</Form.Label>
             <Form.Select className='selectElementPlayer' id='elementJogadorInput'
               name='element' onChange={atualizaPlayer} value={player.element}>
               <option disabled hidden value="">Elemento</option>
@@ -76,12 +64,13 @@ function EditarJogador() {
               <option value="Dendro">Dendro</option>
               <option value="Electro">Electro</option>
               <option value="Geo">Geo</option>
-              <option selected value="Hydro">Hydro</option>
+              <option value="Hydro">Hydro</option>
               <option value="Pyro">Pyro</option>
             </Form.Select>
           </Form.Group>
 
           <Form.Group className="mb-3">
+            <Form.Label>Arma</Form.Label>
             <Form.Select className='selectWeaponPlayer' id='weaponJogadorInput'
               name='weapon' onChange={atualizaPlayer} value={player.weapon}>
               <option disabled hidden value="">Arma</option>
@@ -89,7 +78,7 @@ function EditarJogador() {
               <option value="Catalyst">Catalyst</option>
               <option value="Claymore">Claymore</option>
               <option value="Polearm">Polearm</option>
-              <option selected value="Sword">Sword</option>
+              <option value="Sword">Sword</option>
             </Form.Select>
           </Form.Group>
 
