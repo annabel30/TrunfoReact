@@ -35,14 +35,18 @@ function DadosJogosJogador() {
                     <div className="bannerYelan"></div>
                     <div className="boxBookDataPlayers">
                         <div className="boxVDDados">
-                            <div className="boxVictories">
-                                <p className="textVD">Vitórias:</p><p className="textVD">{player.victories}</p>
+                            <div className="boxVictoriesWChibi">
+                                <div className="boxVictories">
+                                    <p className="textVD">Vitórias:</p><p className="textVD">{player.victories}</p>
+                                </div>
+                                <img className="chibiImageDataPlayers" src={ChibiHappy} alt=""></img>
                             </div>
-                            <div className="boxDefeats">
-                                <p className="textVD">Derrotas:</p><p className="textVD">{player.defeats}</p>
+                            <div className="boxDefeatsWChibi">
+                                <div className="boxDefeats">
+                                    <p className="textVD">Derrotas:</p><p className="textVD">{player.defeats}</p>
+                                </div>
+                                <img className="chibiImageDataPlayers" src={ChibiSad} alt=""></img>
                             </div>
-                            <img className="chibiImageDataPlayers" src={ChibiHappy} alt=""></img>
-                            <img className="chibiImageDataPlayers" src={ChibiSad} alt=""></img>
                         </div>
                     </div>
                     <div className="bannerYelan"></div>

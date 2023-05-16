@@ -31,6 +31,7 @@ function Login() {
     }).catch((erro) => {
       console.log(erro)
       alert("Nome ou senha incorretos!");
+      window.location.reload();
     })
   }
 

@@ -66,7 +66,9 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height: 20rem;
+    height: 25rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 
 .boxVictories {
@@ -113,4 +115,20 @@
 
 .chibiImageDataPlayers {
     width: 12rem;
+}
+
+.boxVictoriesWChibi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20rem;
+}
+
+.boxDefeatsWChibi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20rem;
 }
