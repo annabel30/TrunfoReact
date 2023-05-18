@@ -72,18 +72,18 @@ const CartaJogo = ({ carta }) => {
     }
 
     return (
-        <div className="boxCard">
-            <div className="cardModel" style={{ backgroundImage: `url(${carta.image})`, borderColor: `rgb(${returnColor()})` }}>
-                <div className="elementAndName" style={{ backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(${returnColor()},0.773546918767507) 23%, rgba(${returnColor()}) 52%)` }}>
+        <div className="boxCardJogo">
+            <div className="cardModelJogo" style={{ backgroundImage: `url(${carta.image})`, borderColor: `rgb(${returnColor()})` }}>
+                <div className="elementAndNameJogo" style={{ backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(${returnColor()},0.773546918767507) 23%, rgba(${returnColor()}) 52%)` }}>
                     <img src={returnElementImage()} alt=""></img>
-                    <p className="cardName">{carta.name}</p>
+                    <p className="cardNameJogo">{carta.name}</p>
                 </div>
-                <div className="attibutesBox">
-                    <div className="attributeBox" style={{ backgroundColor: returnAttributeColor() }}><p>ATK</p><p>{carta.atk}</p></div>
-                    <div className="attributeBox" style={{ backgroundColor: returnAttributeColor() }}><p>CRIT RATE</p><p>{carta.criticalRate}</p></div>
-                    <div className="attributeBox" style={{ backgroundColor: returnAttributeColor() }}><p>CRIT DAMAGE</p><p>{carta.criticalDamage}</p></div>
-                    <div className="attributeBox" style={{ backgroundColor: returnAttributeColor() }}><p>ELEM. MASTERY</p><p>{carta.elementalMastery}</p></div>
-                    <div className="attributeBox" style={{ backgroundColor: returnAttributeColor() }}><p>ENERGY RECHARGE</p><p>{carta.energyRecharge}</p></div>
+                <div className="attibutesBoxJogo">
+                    <div className="attributeBoxJogo" style={{ backgroundColor: returnAttributeColor() }}><p>ATK</p><p>{carta.atk}</p></div>
+                    <div className="attributeBoxJogo" style={{ backgroundColor: returnAttributeColor() }}><p>CRIT RATE</p><p>{carta.criticalRate}</p></div>
+                    <div className="attributeBoxJogo" style={{ backgroundColor: returnAttributeColor() }}><p>CRIT DAMAGE</p><p>{carta.criticalDamage}</p></div>
+                    <div className="attributeBoxJogo" style={{ backgroundColor: returnAttributeColor() }}><p>ELEM. MASTERY</p><p>{carta.elementalMastery}</p></div>
+                    <div className="attributeBoxJogo" style={{ backgroundColor: returnAttributeColor() }}><p>ENERGY RECHARGE</p><p>{carta.energyRecharge}</p></div>
                 </div>
             </div>
         </div>
