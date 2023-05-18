@@ -2,7 +2,6 @@ import "./Jogo.css"
 
 import CardBack from "../../img/Extras/cardBack.png"
 
-import Carta from '../carta/Carta';
 import CartaJogo from '../cartaJogo/CartaJogo';
 
 import { v4 } from 'uuid';
@@ -13,7 +12,7 @@ function Jogo() {
 
     // ----------------------------- METODOS DECK -----------------------------
     const [card, setCard] = useState([])
-    const [listAllCards, setListAllCards] = useState([])
+    // const [listAllCards, setListAllCards] = useState([])
     const [listCardsOpponent, setListCardsOpponent] = useState([])
     const [listCardsPlayer, setListCardsPlayer] = useState([])
     const [playerCardModel, setPlayerCardModel] = useState(null)
@@ -33,7 +32,7 @@ function Jogo() {
         console.log("lista oponente")
         console.log(listCardsOpponent);
         setCard(listCardsPlayer[0])
-    }, [listCardsPlayer]);
+    }, [listCardsPlayer, listCardsOpponent]);
 
     // ----------------------------- METODOS DECK -----------------------------
     const separateCards = () => {
@@ -42,7 +41,7 @@ function Jogo() {
             setListCardsPlayer([]);
             resposta.data.sort(() => Math.random() - 0.5);
             const deckCards = resposta.data;
-            setListAllCards(deckCards)
+            // setListAllCards(deckCards)
             for (let i = 0; i < deckCards.length; i++) {
                 if (i % 2 === 0) {
                     setListCardsPlayer((prevDeck) => [...prevDeck, deckCards[i]]);
@@ -106,9 +105,11 @@ function Jogo() {
 
         do {
             if (startedMatch === 0) {
+                alert("jogador comeca")
                 playerPlays();
                 setStartedMatch(1);
             } else {
+                alert("compute3r comeca")
                 computerPlays();
                 setStartedMatch(0);
             }
@@ -168,7 +169,7 @@ function Jogo() {
                 attributeUserValue = playerCardModel.elementalMastery;
                 attributeComputerValue = opponentCardModel.elementalMastery;
                 break;
-            case 5:
+            default:
                 attributeUserValue = playerCardModel.energyRecharge;
                 attributeComputerValue = opponentCardModel.energyRecharge;
                 break;
