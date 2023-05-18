@@ -92,13 +92,13 @@ function Jogo() {
         setListCardsOpponent((prevDeck) => prevDeck.slice(1));
     };
 
-    const getUserDeck = () => {
-        return listCardsPlayer;
-    };
+    // const getUserDeck = () => {
+    //     return listCardsPlayer;
+    // };
 
-    const getComputerDeck = () => {
-        return listCardsOpponent;
-    };
+    // const getComputerDeck = () => {
+    //     return listCardsOpponent;
+    // };
 
     // ----------------------------- METODOS GAME -----------------------------
     const game = () => {
@@ -151,7 +151,34 @@ function Jogo() {
         let attributeUserValue = 0;
         let attributeComputerValue = 0;
 
-        
+        switch (chosenAtt) {
+            case 1:
+                attributeUserValue = playerCardModel.atk;
+                attributeComputerValue = opponentCardModel.atk;
+                break;
+            case 2:
+                attributeUserValue = playerCardModel.criticalRate;
+                attributeComputerValue = opponentCardModel.criticalRate;
+                break;
+            case 3:
+                attributeUserValue = playerCardModel.criticalDamage;
+                attributeComputerValue = opponentCardModel.criticalDamage;
+                break;
+            case 4:
+                attributeUserValue = playerCardModel.elementalMastery;
+                attributeComputerValue = opponentCardModel.elementalMastery;
+                break;
+            case 5:
+                attributeUserValue = playerCardModel.energyRecharge;
+                attributeComputerValue = opponentCardModel.energyRecharge;
+                break;
+        }
+
+        if (attributeUserValue > attributeComputerValue) {
+            return true;
+        } else {
+            return false;
+        }
     };
 
     return (
