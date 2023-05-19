@@ -169,7 +169,7 @@ function Jogo() {
                 attributeUserValue = playerCardModel.elementalMastery;
                 attributeComputerValue = opponentCardModel.elementalMastery;
                 break;
-            default:
+            case 5:
                 attributeUserValue = playerCardModel.energyRecharge;
                 attributeComputerValue = opponentCardModel.energyRecharge;
                 break;
