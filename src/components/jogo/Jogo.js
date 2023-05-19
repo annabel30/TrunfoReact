@@ -105,11 +105,11 @@ function Jogo() {
 
         do {
             if (startedMatch === 0) {
-                alert("jogador comeca")
+                // alert("jogador comeca")
                 playerPlays();
                 setStartedMatch(1);
             } else {
-                alert("compute3r comeca")
+                // alert("compute3r comeca")
                 computerPlays();
                 setStartedMatch(0);
             }
