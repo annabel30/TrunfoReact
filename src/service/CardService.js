@@ -22,6 +22,15 @@ export const CardService = {
         })
     },
 
+    pageBuscarTodasCards: (page, size) => {
+        return axios.get(url + "/pageReadAll?page=" + page + "&size=" + size)
+        .then(response => {
+            return response
+        }).catch(error => {
+            console.log(error)
+        })
+    },
+
     cadastrar: (card) => {
         return axios.post(url + "/create", card)
         .then(response => {

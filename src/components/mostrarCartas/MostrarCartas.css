@@ -20,3 +20,16 @@
     color: #212529;
 } */
 
+.pagination {
+    margin-left: 2rem;
+}
+
+.buttonPaginaItens {
+    background-color: rgb(105, 160, 164);
+    margin-left: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.3rem;
+    color: white;
+    border: 0;
+}
