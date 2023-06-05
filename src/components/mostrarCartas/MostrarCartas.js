@@ -11,7 +11,7 @@ const MostrarCartas = () => {
 
   const [card, setCards] = useState([])
   const [currentPage, setCurrentPage] = useState(0)
-  const [pageSize, setPageSize] = useState(9)
+  const [pageSize, setPageSize] = useState(8)
   const [totalPages, setTotalPages] = useState(0)
 
   useEffect(() => {
