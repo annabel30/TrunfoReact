@@ -103,7 +103,7 @@
 
 .boxBookDataPlayers {
     background-image: url(../../img/Backgrounds/backgroundBookDataPlayers.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     width: 50%;
     min-width: 40rem;
