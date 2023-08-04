@@ -14,15 +14,6 @@ export const PlayerService = {
         })
     },
 
-    login: (name, password) => {
-        return axios.get(url + "/login/" + name + "/" + password)
-        .then(response => {
-            return response
-        }).catch(error => {
-            console.log(error)
-        })
-    },
-
     buscarPorNome: (name) => {
         return axios.get(url + "/name/" + name)
         .then(response => {

@@ -2,37 +2,37 @@ import "./Login.css";
 
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { PlayerService } from '../../service';
 import { useState } from 'react';
 
 import Paimon from "../../img/Extras/paimon.png";
+import { AuthenticationService } from "../../service/AuthenticationService";
 
 function Login() {
 
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [player, setPlayer] = useState({
+    "username": "",
+    "password": ""
+  });
 
-  const handleUsernameChange = (event) => {
-    setUsername(event.target.value);
-  };
+  const handleChange = (e) => {
+    setPlayer({ ...player, [e.target.name]: e.target.value })
+  }
 
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
-  };
-
-  const verifyInfo = (event) => {
+  const verifyInfo = async (event) => {
 
     event.preventDefault()
-    PlayerService.buscarPorNome(username).then((resposta) => {
-      if (username == resposta.data.name && password == resposta.data.password) { // eslint-disable-line eqeqeq
-        localStorage.setItem("nameUser", username);
-        window.location.href = '/home';
-      }
-    }).catch((erro) => {
-      console.log(erro)
+
+    try {
+      const response = await AuthenticationService.login(player)
+      console.log(response.data);
+      localStorage.setItem("nameUser", player.username);
+      alert("logado :D")
+      window.location.href = '/home';
+    } catch (error) {
       alert("Nome ou senha incorretos!");
+      console.error(error);
       window.location.reload();
-    })
+    }
   }
 
   return (
@@ -42,12 +42,12 @@ function Login() {
         <Form className='bloco' onSubmit={verifyInfo}>
           <Form.Group className="inputsLogin" id="formNameLoginPlayer">
             <Form.Label>Nome do Viajante</Form.Label>
-            <Form.Control id='nameInput' type="text" placeholder="Insira o nome" value={username} onChange={handleUsernameChange} />
+            <Form.Control id='nameInput' type="text" placeholder="Insira o nome" name="username" value={player.username} onChange={handleChange} />
           </Form.Group>
 
           <Form.Group className="inputsLogin" id="formPasswordLoginPlayer">
             <Form.Label>Senha</Form.Label>
-            <Form.Control id='passwordInput' type="password" placeholder="Insira a senha" value={password} onChange={handlePasswordChange} />
+            <Form.Control id='passwordInput' type="password" placeholder="Insira a senha" name="password" value={player.password} onChange={handleChange} />
           </Form.Group>
 
           <Button className='botao' variant="primary" type="submit" onClick={verifyInfo}>
