@@ -67,9 +67,9 @@ const Carta = ({ carta }) => {
         }
     }
 
-    if (!carta || !carta.image) {
-        return null;
-    }
+    // if (!carta || !carta.image) {
+    //     return null;
+    // }
 
     return (
         <div className="boxCard">
