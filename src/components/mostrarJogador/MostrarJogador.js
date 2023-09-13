@@ -151,7 +151,7 @@ function MostrarJogador() {
             <img className="profileImage" src={defineProfileImage()} alt=""></img>
             <div className="infoPlayer">
               <div className="infoLinePlayerName">
-                <p className="aliasTravelerTitle">"THE 4TH DESCENDER" {player.name}</p>
+                <p>"THE 4TH DESCENDER" {player.name}</p>
                 <p>{player.region}, Teyvat</p>
               </div>
               <div className="infoLinePlayer">
